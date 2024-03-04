@@ -1,0 +1,86 @@
+{
+    "name": "degree-planner",
+    "version": "1.0.0",
+    "homepage": "./",
+    "description": "The degree planner for CS graduate advising",
+    "author": "Nick Reisinger",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.10.5",
+        "@emotion/styled": "^11.10.5",
+        "@fontsource/roboto": "^4.5.8",
+        "@mui/icons-material": "^5.11.0",
+        "@mui/material": "^5.11.7",
+        "@reduxjs/toolkit": "^1.9.3",
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "@types/jest": "^27.5.2",
+        "@types/node": "^16.18.11",
+        "@types/react": "^18.0.27",
+        "@types/react-dom": "^18.0.10",
+        "notistack": "^3.0.1",
+        "pdfjs-dist": "^3.4.120",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.8.2",
+        "react-scripts": "5.0.1",
+        "redux-logger": "^3.0.6",
+        "track_requirements": "file:track_requirements",
+        "typescript": "^4.9.5",
+        "web-vitals": "^2.1.4"
+    },
+    "main": "electron.js",
+    "build": {
+        "files": [
+            "build/**/*"
+        ]
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --passWithNoTests",
+        "eject": "react-scripts eject",
+        "electron": "concurrently -k \"cross-env BROWSER=none npm start\" \"electron-forge start\"",
+        "electron:package": "electron-forge package",
+        "electron:make": "electron-forge make",
+        "electron:make:windows": "electron-forge make --platform win32"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@electron-forge/cli": "^6.1.1",
+        "@electron-forge/maker-deb": "^6.1.1",
+        "@electron-forge/maker-rpm": "^6.1.1",
+        "@electron-forge/maker-squirrel": "^6.1.1",
+        "@electron-forge/maker-zip": "^6.1.1",
+        "@types/redux-logger": "^3.0.9",
+        "concurrently": "^7.6.0",
+        "cross-env": "^7.0.3",
+        "electron": "^22.2.0",
+        "prettier": "2.8.4"
+    },
+    "prettier": {
+        "trailingComma": "es5",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true
+    }
+}
