@@ -1,0 +1,138 @@
+{
+    "name": "Intelligent Systems",
+    "major": "Computer Science",
+    "requirements": {
+        "core": {
+            "name": "Core Courses",
+            "gpaRequired": 3.19,
+            "classes": [
+                {
+                    "name": "Natural Language Processing",
+                    "prefix": "CS",
+                    "number": 6320
+                },
+                {
+                    "name": "Design and Analysis of Computer Algorithms",
+                    "prefix": "CS",
+                    "number": 6363
+                },
+                {
+                    "name": "Artificial Intelligence",
+                    "prefix": "CS",
+                    "number": 6364
+                },
+                {
+                    "name": "Machine Learning",
+                    "prefix": "CS",
+                    "number": 6375
+                }
+            ],
+            "groups": [
+                {
+                    "countRequired": 1,
+                    "classes": [
+                        {
+                            "name": "Advanced Operating Systems",
+                            "prefix": "CS",
+                            "number": 6378
+                        },
+                        {
+                            "name": "Database Design",
+                            "prefix": "CS",
+                            "number": 6360
+                        }
+                    ]
+                }
+            ]
+        },
+        "electives": {
+            "gpaRequired": 3.0,
+            "name": "Approved 6000 Level Electives",
+            "groups": [
+                {
+                    "countRequired": 5,
+                    "creditHours": 15,
+                    "preload": "^(?:CS|SE) 6\\d+$",
+                    "classes": []
+                },
+                {
+                    "title": "Additional Electives",
+                    "creditHours": 3,
+                    "classes": [],
+                    "suggestedClasses": [
+                        {
+                            "name": "Discrete Structures",
+                            "prefix": "CS",
+                            "number": 5333
+                        },
+                        {
+                            "name": "Algorithm Analysis and Data Structures",
+                            "prefix": "CS",
+                            "number": 5343
+                        },
+                        {
+                            "name": "Operating Systems Concepts",
+                            "prefix": "CS",
+                            "number": 5348
+                        }
+                    ]
+                }
+            ]
+        },
+        "other": {
+            "name": "Other Requirements",
+            "classes": []
+        },
+        "prerequisites": {
+            "name": "Admission Prerequisites",
+            "classes": [],
+            "suggestedClasses": [
+                {
+                    "name": "Probability & Statistics in CS",
+                    "prefix": "CS",
+                    "number": 3341
+                },
+                {
+                    "name": "Computer Science I",
+                    "prefix": "CS",
+                    "number": 5303
+                },
+                {
+                    "name": "Computer Science II",
+                    "prefix": "CS",
+                    "number": 5330
+                },
+                {
+                    "name": "Discrete Structures",
+                    "prefix": "CS",
+                    "number": 5333
+                },
+                {
+                    "name": "Algorithm Analysis & Data Structures",
+                    "prefix": "CS",
+                    "number": 5343
+                },
+                {
+                    "name": "Operating System Concepts",
+                    "prefix": "CS",
+                    "number": 5348
+                },
+                {
+                    "name": "Automata Theory",
+                    "prefix": "CS",
+                    "number": 5349
+                },
+                {
+                    "name": "Software Engineering",
+                    "prefix": "CS",
+                    "number": 5354
+                },
+                {
+                    "name": "Computer Networks",
+                    "prefix": "CS",
+                    "number": 5390
+                }
+            ]
+        }
+    }
+}
